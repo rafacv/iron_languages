@@ -305,7 +305,7 @@ namespace IronRuby.Builtins {
                 if (str == null) {
                     return null;
                 }
-                match = regex.Match(str, 0);
+                match = regex.Match(str, start);
             } else {
                 if (start < 0) {
                     start += str.Length;
